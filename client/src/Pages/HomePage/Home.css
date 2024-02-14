@@ -1,0 +1,202 @@
+.col-md-3 {
+    margin-right: 20px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.col-md-3:hover {
+    border: 1px solid #ccc;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
+}
+
+body {
+    overflow-x: hidden;
+    /* Hide scrollbars */
+}
+
+.Home {
+    /* background-image: radial-gradient(circle 311px at 8.6% 27.9%, rgba(62, 147, 252, 0.57) 12.9%, rgba(239, 183, 192, 0.44) 91.2%); */
+    background-color: rgb(226, 226, 226);
+    height: 100%;
+    width: 100%;
+}
+
+content {
+    margin-bottom: 5px;
+}
+
+
+.custom-container-margin {
+    margin-left: 50px;
+    padding-left: 10px;
+}
+
+div h6 {
+    font-size: '1.2rem';
+    margin-bottom: '0.3rem';
+    margin-top: "0rem";
+    font-weight: bold;
+}
+
+div p {
+    font-size: '1rem';
+    margin-bottom: '0px';
+    margin-top: "0rem";
+}
+
+.p-2 {
+    height: 150px;
+}
+
+.box {
+    display: flex;
+    margin-top: 5px;
+    flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    .box {
+        flex-direction: column;
+    }
+}
+
+/* Content layout and styles */
+.left-content {
+    flex: 0 0 60%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    align-items: flex-start;
+}
+
+.right-content {
+    flex: 30%;
+}
+
+/* User info and list item */
+.list-item{
+    margin-bottom: 10px;
+}
+.user-info,.list-item {
+    display: flex;
+    align-items: flex-start;
+    width:80%;
+}
+
+
+.user-info img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    
+}
+
+@media (max-width: 576px) {
+    .user-info img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .user-info p,
+    .list-item h6,
+    .list-item content {
+        font-size: 0.9rem;
+        /* Adjust font size for readability */
+    }
+}
+
+/* Ensure images are responsive */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 600px) {
+    .list-item {
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .list-item .user-info img {
+        width: 20px;
+        /* Smaller images on very small screens */
+        height: 20px;
+    }
+
+    .list-item h6,
+    .list-item content,
+    .list-item p {
+        font-size: 0.8rem;
+        /* Smaller text on very small screens */
+    }
+
+    .p-2 {
+        height: auto;
+        /* Allow height to adjust based on content */
+        padding: 10px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .list-item {
+        margin-bottom: 10px;
+        /* Ensure proper spacing between items */
+    }
+}
+
+
+
+@media screen and (max-width: 300px) {
+    .list-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+.list-item {
+    width: 80%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+
+
+
+
+.topic {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.button {
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    display: block;
+    width: auto;
+    text-align: left;
+}
+
+.button:hover {
+    border: 1px solid #ccc;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    background-color: green;
+    cursor: pointer;
+
+}
